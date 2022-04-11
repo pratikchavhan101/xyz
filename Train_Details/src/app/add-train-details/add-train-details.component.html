@@ -1,0 +1,63 @@
+<div class="col-md-6 offset-md-3" style="height: 500px;">
+<h3>Add Train Details</h3>
+<style>
+    label{
+        width: 100px;
+        display: inline-block;
+        margin: 15px;
+    }
+</style>
+<form (ngSubmit) = "onSubmit()">
+
+     <div class="form.group">
+         <label>Train No</label>
+         <input type="text" class="form.control" id="trainNo"
+             [(ngModel)] = "trainmodel .trainNo" name="trainNo">
+     </div>
+
+
+    <div class="form.group">
+        <label>Train Name</label>
+        <input type="text" class="form.control" id="trainName"
+            [(ngModel)] = "trainmodel .trainName" name="trainName">
+     </div>
+
+
+    <div class="form.group">
+        <label>From</label>
+        <input type="text" class="form.control" id="trainFrom"
+            [(ngModel)] = "trainmodel .trainFrom" name="trainFrom">
+    </div>
+
+
+    <div class="form.group">
+        <label>To</label>
+        <input type="text" class="form.control" id="trainTo"
+            [(ngModel)] = "trainmodel .trainTo" name="trainTo">
+    </div>
+
+
+    <div class="form.group">
+        <label>Train Fare</label>
+        <input type="text" class="form.control" id="fare"
+            [(ngModel)] = "trainmodel .fare" name="fare">
+    </div>
+
+
+    <div class="form.group">
+        <label>Seats</label>
+        <input type="text" class="form.control" id="seats"
+            [(ngModel)] = "trainmodel .seats" name="seats">
+    </div>
+
+
+    <div class="form.group">
+        <label>Travel Time</label>
+        <input type="text" class="form.control" id="time"
+            [(ngModel)] = "trainmodel .time" name="time">
+    </div>
+    
+
+    <button class="btn btn-success" type="submit">submit</button>
+</form>
+</div>

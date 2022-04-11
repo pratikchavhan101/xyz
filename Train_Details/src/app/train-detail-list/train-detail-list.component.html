@@ -1,0 +1,32 @@
+<h2>Train Details</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> TrainNo </th>
+            <th> TrainName </th>
+            <th> From </th>
+            <th> To </th>
+            <th> TravelFare </th>
+            <th> Seats </th>
+            <th> TravelTime </th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Traindetails of trainDetails">
+            <td> {{Traindetails.trainNo}}</td>
+            <td> {{Traindetails.trainName}}</td>
+            <td> {{Traindetails.trainFrom}}</td>
+            <td> {{Traindetails.trainTo}}</td>
+            <td> {{Traindetails.fare}}</td>
+            <td> {{Traindetails.seats}}</td>
+            <td> {{Traindetails.time}}</td>
+            <td>
+                <button (click) = "updateTrainDetails(Traindetails.id)" class="btn btn-info"> Update</button>
+                <button (click) = "deleteTrainDetails(Traindetails.id)" class="btn btn-danger" style="margin-left: 10px"> Delete </button>
+                <button (click) = "viewTrainDetails(Traindetails.id)" class="btn btn-info" style="margin-left: 10px"> View </button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
